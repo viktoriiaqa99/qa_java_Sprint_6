@@ -1,7 +1,6 @@
 package com.example;
 
 import org.junit.Test;
-
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -9,13 +8,13 @@ import static org.junit.Assert.assertEquals;
 public class CatTest {
 
     @Test
-    public void getSoundReturnsMeow() {
+    public void getSoundTestReturnsMeow() {
         Cat cat = new Cat(new Feline());
         assertEquals("Мяу", cat.getSound());
     }
 
     @Test
-    public void getFoodReturnsPredatorFood() throws Exception {
+    public void getFoodTestReturnsPredatorFood() throws Exception {
         Cat cat = new Cat(new Feline());
         List<String> food = cat.getFood();
         assertEquals(List.of("Животные", "Птицы", "Рыба"), food);

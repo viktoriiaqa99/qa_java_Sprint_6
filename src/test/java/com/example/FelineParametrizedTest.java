@@ -28,7 +28,7 @@ public class FelineParametrizedTest {
     }
 
     @Test
-    public void getFoodReturnsCorrectFood() throws Exception {
+    public void getFoodTestReturnsCorrectFood() throws Exception {
         Feline feline = new Feline();
         assertEquals(expectedFood, feline.getFood(animalKind));
     }
